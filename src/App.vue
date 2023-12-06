@@ -4,7 +4,7 @@ export default{
   name: 'App',
   data(){
     return {
-      
+      title: 'projects'
     }
   }
 }
@@ -12,7 +12,7 @@ export default{
 
 <template>
   <div>
-    <h1>projects</h1>
+    <h1>{{title}}</h1>
   </div>
 </template>
 
