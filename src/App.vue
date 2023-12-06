@@ -1,18 +1,23 @@
 <script>
-import axios from 'axios';
 import {store} from './data/store';
+import axios from 'axios';
+import card from './components/cards.vue';
 export default{
   name: 'App',
+  components: {
+    card,
+  },
   data(){
     return {
-      title: 'Projects'
+      title: 'Projects',
+      store
     }
   },
   methods: {
     getApi(){
       axios.get(store.apiUrl + 'Projects')
       .then(results => {
-        console.log(results.data);
+        store.projects = results.data;
       });
     }
   },mounted(){
@@ -24,7 +29,9 @@ export default{
 <template>
   <div class="container">
     <h1>{{title}}</h1>
-    <div></div>
+    <div class="container d-flex flex-wrap justify-content-center gap-3">
+      <card/> 
+    </div>
   </div>
 </template>
 
