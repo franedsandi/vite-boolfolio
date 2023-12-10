@@ -28,5 +28,9 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
+  &.active{
+    color: blue
+  }
+
 }
 </style>
