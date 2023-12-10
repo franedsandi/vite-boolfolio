@@ -2,6 +2,8 @@
 import {store} from '../data/store';
 import axios from 'axios';
 import card from '../components/cards.vue';
+import header from '../components/header.vue';
+
 export default {
   name:'Projects',
   data(){

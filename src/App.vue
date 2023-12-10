@@ -1,7 +1,10 @@
 <script>
+import Header from './components/header.vue';
 export default{
   name: 'App',
-  components: {},
+  components: {
+    Header
+  },
   data(){
     return {
       title: "Francisco's Projects"
@@ -14,6 +17,7 @@ export default{
 </script>
 
 <template>
+  <Header/>
   
   <div class="container">
     <h1>{{title}}</h1>
