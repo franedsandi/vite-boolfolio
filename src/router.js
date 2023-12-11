@@ -3,6 +3,7 @@ import Home from "./pages/Home.vue";
 import About from "./pages/About.vue";
 import Contacts from "./pages/Contacts.vue";
 import Projects from "./pages/Projects.vue";
+import ProjectDetails from "./pages/ProjectDetails.vue";
 import Error404 from "./pages/Error404.vue";
 
 const router = createRouter({
@@ -30,6 +31,11 @@ const router = createRouter({
       name: "Projects",
       component: Projects
     },
+    {
+      path: "/Projects/:slug",
+      name: "ProjectDetails",
+      component: ProjectDetails
+    },
 
 
 
@@ -38,6 +44,7 @@ const router = createRouter({
 
     {
       path: "/:pathmatch(.*)*",
+      name: 'Error-404',
       component: Error404
     }
   ]

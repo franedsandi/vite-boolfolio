@@ -18,7 +18,7 @@ export default {
 
   <div class="card" style="width: 18rem;" v-for="project in store.projects" :key="project.id">
     <div class="card-body">
-      <h5 class="card-title">{{ project.title }}</h5>
+      <router-link :to="{name:'ProjectDetails', params:{slug:project.slug}}" ><h5 class="card-title">{{ project.title }}</h5></router-link>
       <p class="card-text">{{ project.description }}</p>
       <p class="card-text">{{ project.publication_date }}</p>
     </div>

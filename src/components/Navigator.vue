@@ -10,7 +10,6 @@ export default {
   components: {},
   methods: {
   callApi(linkUrl) {
-    console.log('Calling API with link:', linkUrl);
     this.$emit('callApi', linkUrl);
   },
 },
@@ -53,6 +52,10 @@ export default {
   button{
     padding:3px 7px;
     margin: 2px;
+    background-color: rgb(129, 172, 118);
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
   }
 }
 </style>
