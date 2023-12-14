@@ -1,13 +1,10 @@
 <script>
-import ContactForm from '../components/ContactForm.vue'
 export default {
-  name:'Contacts',
+  name:'ContactsForm',
   data(){
     return{}
   },
-  components:{
-    ContactForm
-  },
+  components:{},
   methods:{},
   mounted(){},
   computed:{}
@@ -15,9 +12,10 @@ export default {
 </script>
 
 <template>
-  <h1>Contacts
-  </h1>
-  <ContactForm/>
+  <form>
+    
+  </form>
+
 </template>
 
 
